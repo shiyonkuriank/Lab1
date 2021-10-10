@@ -1088,6 +1088,6 @@ app.post("/uploadUserImage", upload.single('image'), (req,res)=>{
   res.send("Image Uploaded")
 })
 
-app.listen('18.218.134.220:3001', ()=>{
+app.listen('http://18.218.134.220:3001', ()=>{
 console.log("Server running on 3001");
 });
