@@ -1,0 +1,114 @@
+html{height: 100%;}
+
+.Restaurant{
+  width: 100vh;
+  height: 100%;
+}
+
+body{
+  margin: 0cm;
+  padding: 0cm;
+  color: forestgreen;
+  height: 100%;
+  
+}
+
+  
+  
+  .Nav{
+    background-color: black;
+    width: 100%;
+    height: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+  }
+
+  .Nav .leftside{
+    flex: 50%;
+    display: flex;
+    align-items: flex-start;
+    align-items: center;
+  }
+
+  .Nav .leftside .links{
+    max-height: 80px;
+
+  }
+
+  .Nav .leftside .links .a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin-left: 15px;
+    
+  }
+
+  .Nav .leftside button{
+    display: none;
+  }
+
+  .Nav .rightside{
+    flex:50%;
+    display: flex;
+    align-items: flex-start;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 25px;
+  }
+
+  .Nav .rightside .links .a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin-left: 15px;
+    
+  }
+
+@media only screen and(max-width: 1000px){
+ 
+  .Nav .leftside .links .a{
+    font-size: 5px;
+  }
+}
+
+.imageFood{
+height: 200px;
+width: 300px;
+}
+
+.imageRest{
+  height: 50%;
+  width: 50%;
+  }
+  
+ .viewOrder .grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+  }
+  
+ .viewOrder .grid-item{
+    text-align: center;
+    padding-top: 10px;
+  }
+
+ .addDish .imgPreview{
+    width: 100%;
+    height: 460px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .addDish .imgPreview input[type="file"]{
+    display: none;
+    
+  }
+  
+  .addDish .imgPreview .customFileUpload{
+    font-size: 22px;
+    font-weight: 500;
+    cursor: pointer;
+  }

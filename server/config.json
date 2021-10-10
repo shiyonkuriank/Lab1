@@ -1,0 +1,10 @@
+{"DB":{
+    "host":"ubereatsdb.clb26ohijtw2.us-east-2.rds.amazonaws.com",
+    "username":"shiyon",
+    "password":"ubereatsdb",
+    "port":3306,
+    "database":"ubereats_schema"
+
+},
+"frontend": "http://localhost:3000"
+}

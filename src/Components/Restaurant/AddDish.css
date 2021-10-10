@@ -1,0 +1,34 @@
+.addDish{
+    margin-top: 50px;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    
+}
+
+.addDish .add .form-group .label{
+    width: 200px;
+}
+
+.addDish .add .form-group .input{
+    width: 100px;
+}
+
+.imgPreview{
+    width: 100%;
+    height: 460px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+ .imgPreview input[type="file"]{
+    display: none;
+    
+  }
+.imgPreview .customFileUpload{
+    font-size: 22px;
+    font-weight: 500;
+    cursor: pointer;
+  }

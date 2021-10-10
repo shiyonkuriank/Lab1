@@ -1,0 +1,11 @@
+body{
+    background-image: "ubereats4.jpg";
+    background-size: cover;
+}
+
+.usersignup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}

@@ -1,0 +1,44 @@
+
+
+.editprofile{
+    
+    margin-top: 50px;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-content: flex-start;
+    color: seagreen;
+    
+}
+
+.editprofile .form-group{
+    margin-top: 10px;
+    
+    
+}
+
+.editprofile .form-group .input{
+    margin-left: 10px;
+    width: 40%;
+
+}
+
+.editprofile .form-group .label{
+    margin-left: 0px;
+    align-items: flex-start;
+    width: 300px;
+}
+
+.editprofile .form-group .button{
+color: white;
+background-color: forestgreen;
+border-color: black;
+align-items: flex-end;
+margin-left: 10px;
+
+}
+
+.editprofile .container .imgPreview{
+    height: 200px;
+    width: 300px;
+}
