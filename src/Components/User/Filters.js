@@ -18,7 +18,7 @@ function Filters(){
     //const history=useHistory();
 
     const restFoodType=()=>{
-        Axios.post("http://localhost:3001/restFoodType",
+        Axios.post("http://18.218.134.220:3001/restFoodType",
 {foodType:foodType}).then((response)=>{
   setRestFoodType(response.data);
 
@@ -27,7 +27,7 @@ function Filters(){
 
 const restDeliveryType=()=>{
     
-    Axios.post("http://localhost:3001/restDeliveryType",
+    Axios.post("http://18.218.134.220:3001/restDeliveryType",
 {deliveryType:deliveryType}).then((response)=>{
 setRestDeliveryType(response.data);
 
@@ -36,7 +36,7 @@ setRestDeliveryType(response.data);
 
 const addToFavourite=(Rest, Loc)=>{
     alert("Added to Favourites");
-    Axios.post("http://localhost:3001/favRest",
+    Axios.post("http://18.218.134.220:3001/favRest",
     {name:Rest,loc:Loc,customer:localStorage.getItem('name')}).then((response)=>{
       console.log("Added to favourite");
      
@@ -45,7 +45,7 @@ const addToFavourite=(Rest, Loc)=>{
 
 const dishSearch=()=>{
     console.log("dish search called");
-    Axios.post("http://localhost:3001/dishSearch",
+    Axios.post("http://18.218.134.220:3001/dishSearch",
     {dish:dish}).then((response)=>{
         if(response.data.message){
                  
@@ -59,7 +59,7 @@ const dishSearch=()=>{
 
 const locSearch=()=>{
     console.log("loc search called");
-    Axios.post("http://localhost:3001/locSearch",
+    Axios.post("http://18.218.134.220:3001/locSearch",
     {loc:loc}).then((response)=>{
         if(response.data.message){
                  

@@ -18,7 +18,7 @@ function RestSign(){
 
     const restlogin=()=>{
          
-        Axios.post("http://localhost:3001/restlogin",
+        Axios.post("http://18.218.134.220:3001/restlogin",
         {email:email,pwd:pwd}).then((response)=>{
             if(response.data.message){
                  

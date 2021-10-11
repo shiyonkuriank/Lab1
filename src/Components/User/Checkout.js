@@ -10,7 +10,7 @@ function Checkout(){
     const [cartItem,setCart]=useState([]);
     const[cartTotal,setCartTotal]=useState("");
      
-    Axios.post("http://localhost:3001/getCart",
+    Axios.post("http://18.218.134.220:3001/getCart",
 {name:localStorage.getItem('restName'),customer:localStorage.getItem('name')}).then((response)=>{
     setCart(response.data)});
 

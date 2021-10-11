@@ -11,7 +11,7 @@ function Orders(){
     const[orderStatus, setOrderStatus]=useState("");
 
     useEffect(()=>{
-        Axios.post("http://localhost:3001/viewCustOrder",
+        Axios.post("http://18.218.134.220:3001/viewCustOrder",
         {name:localStorage.getItem('name')}).then((response)=>{
           setOrders(response.data);
          
@@ -22,7 +22,7 @@ function Orders(){
 
     
     const filterStatus=()=>{
-        Axios.post("http://localhost:3001/orderStatusFilter",
+        Axios.post("http://18.218.134.220:3001/orderStatusFilter",
         {name:localStorage.getItem('name'),status:filter}).then((response)=>{
           setResult(response.data);
          
@@ -33,7 +33,7 @@ function Orders(){
 
     const setStatus=(cust,dish)=>{
         
-        Axios.post("http://localhost:3001/setOrderStatus",
+        Axios.post("http://18.218.134.220:3001/setOrderStatus",
         {name:localStorage.getItem('name'),customer:cust,dishes:dish, status:orderStatus}).then((response)=>{
           console.log(response.data);
          

@@ -51,7 +51,7 @@ function EditProfile(){
 
 	const uploadImage=()=>{
 		alert("Image Uploaded");
-        Axios.post("http://localhost:3001/editRestImg",
+        Axios.post("http://18.218.134.220:3001/editRestImg",
 {name:localStorage.getItem('name'),img:profileImg}).then((response)=>{
   
 console.log(response.data);
@@ -72,26 +72,26 @@ console.log(response.data);
     const editName=()=>{
         console.log("Editing called");
         
-        Axios.post("http://localhost:3001/editName",
+        Axios.post("http://18.218.134.220:3001/editName",
 {name:localStorage.getItem('name'),newName:newname}).then((response)=>{
      
 console.log(response.data);
 
 });
 
-Axios.post("http://localhost:3001/editOrderSummaryRestName",
+Axios.post("http://18.218.134.220:3001/editOrderSummaryRestName",
 {name:localStorage.getItem('name'),newName:newname}).then((response)=>{
     console.log(response.data);
 
 });
 
-Axios.post("http://localhost:3001/editDishesRestName",
+Axios.post("http://18.218.134.220:3001/editDishesRestName",
 {name:localStorage.getItem('name'),newName:newname}).then((response)=>{
     console.log(response.data);
 
 });
 
-Axios.post("http://localhost:3001/editFavRestName",
+Axios.post("http://18.218.134.220:3001/editFavRestName",
 {name:localStorage.getItem('name'),newName:newname}).then((response)=>{
     console.log(response.data);
 
@@ -102,7 +102,7 @@ localStorage.setItem('name',newname);
     const editEmail=()=>{
         console.log("Editing called");
         
-        Axios.post("http://localhost:3001/editEmail",
+        Axios.post("http://18.218.134.220:3001/editEmail",
 {name:localStorage.getItem('name'),newemail:newemail}).then((response)=>{
   
 console.log(response.data);
@@ -113,7 +113,7 @@ console.log(response.data);
     const editPhone=()=>{
         console.log("Editing called");
         
-        Axios.post("http://localhost:3001/editPhone",
+        Axios.post("http://18.218.134.220:3001/editPhone",
 {name:localStorage.getItem('name'),newPhone:newphone}).then((response)=>{
   
 console.log(response.data);
@@ -123,7 +123,7 @@ console.log(response.data);
     const editLoc=()=>{
         console.log("Editing called");
         
-        Axios.post("http://localhost:3001/editLoc",
+        Axios.post("http://18.218.134.220:3001/editLoc",
 {name:localStorage.getItem('name'),newLoc:newloc}).then((response)=>{
   
 console.log(response.data);
@@ -134,7 +134,7 @@ console.log(response.data);
     const editType=()=>{
         console.log("Editing called");
         
-        Axios.post("http://localhost:3001/editType",
+        Axios.post("http://18.218.134.220:3001/editType",
 {name:localStorage.getItem('name'),type:dType}).then((response)=>{
   
 console.log(response.data);
@@ -145,7 +145,7 @@ console.log(response.data);
     const editDesc=()=>{
         console.log("Editing called");
         
-        Axios.post("http://localhost:3001/editDesc",
+        Axios.post("http://18.218.134.220:3001/editDesc",
 {name:localStorage.getItem('name'),newDesc:newdesc}).then((response)=>{
   
 console.log(response.data);
@@ -155,7 +155,7 @@ console.log(response.data);
     const editTime=()=>{
         console.log("Editing called");
         
-        Axios.post("http://localhost:3001/editTime",
+        Axios.post("http://18.218.134.220:3001/editTime",
 {name:localStorage.getItem('name'),newTime:newtime}).then((response)=>{
   
 console.log(response.data);

@@ -64,7 +64,7 @@ function EditDishes(){
 
 	const uploadImage=()=>{
 		alert("Image Uploaded");
-        Axios.post("http://localhost:3001/editDishImg",
+        Axios.post("http://18.218.134.220:3001/editDishImg",
 {name:localStorage.getItem('name'),img:profileImg,dish:name}).then((response)=>{
   
 console.log(response.data);
@@ -77,7 +77,7 @@ console.log(response.data);
     const editDname=()=>{
         alert("Successfully Edited");
         
-        Axios.post("http://localhost:3001/editDname",
+        Axios.post("http://18.218.134.220:3001/editDname",
 {name:name,newname:newname}).then((response)=>{
   
 console.log(response.data);
@@ -88,7 +88,7 @@ console.log(response.data);
     const editPrice=()=>{
         alert("Successfully Edited");
         
-        Axios.post("http://localhost:3001/editPrice",
+        Axios.post("http://18.218.134.220:3001/editPrice",
 {name:name,newPrice:newprice}).then((response)=>{
   
 console.log(response.data);
@@ -99,7 +99,7 @@ console.log(response.data);
     const editCat=()=>{
         alert("Successfully Edited");
         
-        Axios.post("http://localhost:3001/editCat",
+        Axios.post("http://18.218.134.220:3001/editCat",
 {name:name,newCat:newcat}).then((response)=>{
   
 console.log(response.data);
@@ -109,7 +109,7 @@ console.log(response.data);
     const editIng=()=>{
         alert("Successfully Edited");
         
-        Axios.post("http://localhost:3001/editIng",
+        Axios.post("http://18.218.134.220:3001/editIng",
 {name:name,newIng:newing}).then((response)=>{
   
 console.log(response.data);

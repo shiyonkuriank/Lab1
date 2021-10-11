@@ -20,7 +20,7 @@ function AddDish(){
     const addDish=()=>{
         alert("Dish added Successfully");
         
-        Axios.post("http://localhost:3001/addDish",
+        Axios.post("http://18.218.134.220:3001/addDish",
 {rname:localStorage.getItem('name'),name:name,price:price,type:foodType,cat:cat,ing:ing}
 ).then((response)=>{
 

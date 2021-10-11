@@ -9,7 +9,7 @@ function Receipt(){
     const[receipt,setReceipt]=useState([]);
 
     useEffect(()=>{
-        Axios.post("http://localhost:3001/viewReceipt",
+        Axios.post("http://18.218.134.220:3001/viewReceipt",
         {restname:localStorage.getItem('receiptFor'),
         dish:localStorage.getItem('receiptDish'),name:localStorage.getItem('name')}).then((response)=>{
           setReceipt(response.data);

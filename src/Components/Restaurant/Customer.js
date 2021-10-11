@@ -14,7 +14,7 @@ const user=useSelector((state)=> state.user.value);
 
 useEffect(()=>{
 
-    Axios.post("http://localhost:3001/userProfile",
+    Axios.post("http://18.218.134.220:3001/userProfile",
 {name:localStorage.getItem('customer')}).then((response)=>{
   setdata(response.data);
 console.log(response.data);

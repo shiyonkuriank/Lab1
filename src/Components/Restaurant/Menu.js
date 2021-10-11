@@ -8,7 +8,7 @@ function Menu(){
  const[data,setdata]=useState([]);
     
   useEffect(()=>{
-    Axios.post("http://localhost:3001/dishes",
+    Axios.post("http://18.218.134.220:3001/dishes",
     {name:localStorage.getItem('name')}).then((response)=>{
       setdata(response.data);
       console.log(data);

@@ -40,7 +40,7 @@ function EditUserProfile(){
 	const uploadImage=()=>{
 
 		alert("Image Uploaded");
-        Axios.post("http://localhost:3001/editProfileImg",
+        Axios.post("http://18.218.134.220:3001/editProfileImg",
 {name:localStorage.getItem('name'),img:profileImg}).then((response)=>{
   
 console.log(response.data);
@@ -68,7 +68,7 @@ console.log(response.data);
 
     const editName=()=>{
                
-        Axios.post("http://localhost:3001/editUserName",
+        Axios.post("http://18.218.134.220:3001/editUserName",
 {name:localStorage.getItem('name'),newname:newname}).then((response)=>{
   
 console.log(response.data);
@@ -76,14 +76,14 @@ console.log(response.data);
 
 });
 
-Axios.post("http://localhost:3001/editOrderSummaryUserName",
+Axios.post("http://18.218.134.220:3001/editOrderSummaryUserName",
 {name:localStorage.getItem('name'),newname:newname}).then((response)=>{
   
 console.log(response.data);
 
 });
 
-Axios.post("http://localhost:3001/editFavUserName",
+Axios.post("http://18.218.134.220:3001/editFavUserName",
 {name:localStorage.getItem('name'),newname:newname}).then((response)=>{
   
 console.log(response.data);
@@ -106,7 +106,7 @@ console.log(response.data);
     const editPhone=()=>{
         alert("Successfully Edited");
         
-        Axios.post("http://localhost:3001/editUserPhone",
+        Axios.post("http://18.218.134.220:3001/editUserPhone",
 {name:name,newphone:newphone}).then((response)=>{
   
 console.log(response.data);
@@ -116,7 +116,7 @@ console.log(response.data);
     const editDob=()=>{
         alert("Successfully Edited");
         
-        Axios.post("http://localhost:3001/editUserDob",
+        Axios.post("http://18.218.134.220:3001/editUserDob",
 {name:name,newdob:newdob}).then((response)=>{
   
 console.log(response.data);
@@ -127,7 +127,7 @@ console.log(response.data);
 	const editPass=()=>{
         alert("Successfully Edited");
         
-        Axios.post("http://localhost:3001/editUserPass",
+        Axios.post("http://18.218.134.220:3001/editUserPass",
 {name:name,newpass:newpass}).then((response)=>{
   
 console.log(response.data);
@@ -139,7 +139,7 @@ console.log(response.data);
     const editCity=()=>{
         alert("Successfully Edited");
         
-        Axios.post("http://localhost:3001/editUserCity",
+        Axios.post("http://18.218.134.220:3001/editUserCity",
 {name:name,newcity:newcity}).then((response)=>{
   
 console.log(response.data);
@@ -149,7 +149,7 @@ console.log(response.data);
     const editState=()=>{
         alert("Successfully Edited");
         
-        Axios.post("http://localhost:3001/editUserState",
+        Axios.post("http://18.218.134.220:3001/editUserState",
 {name:name,newstate:newstate}).then((response)=>{
   
 console.log(response.data);
@@ -160,7 +160,7 @@ console.log(response.data);
     const editCountry=()=>{
         alert("Successfully Edited");
         
-        Axios.post("http://localhost:3001/editUserCountry",
+        Axios.post("http://18.218.134.220:3001/editUserCountry",
 {name:name,newcountry:newcountry}).then((response)=>{
   
 console.log(response.data);

@@ -24,7 +24,7 @@ const disp=()=>{
 }
 
 useEffect(()=>{
-    Axios.post("http://localhost:3001/profile",
+    Axios.post("http://18.218.134.220:3001/profile",
 {name:localStorage.getItem('name')}).then((response)=>{
   setdata(response.data);
 console.log(response.data);

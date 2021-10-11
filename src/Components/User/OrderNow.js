@@ -20,7 +20,7 @@ function OrderNow(){
 
  const orderSummary=()=>{
  console.log("summary called");
-  Axios.post("http://localhost:3001/orderSummary",
+  Axios.post("http://18.218.134.220:3001/orderSummary",
   {name:localStorage.getItem('restName'),customer:localStorage.getItem('name'),
   dishes:JSON.stringify(cart)}).then((response)=>{
   console.log(response);
@@ -52,7 +52,7 @@ history.push('/Confirmation');
   };
     
  useEffect(()=>{
-    Axios.post("http://localhost:3001/dishes",
+    Axios.post("http://18.218.134.220:3001/dishes",
 {name:localStorage.getItem('restName')}).then((response)=>{
 setdata(response.data);
 

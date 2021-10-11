@@ -21,7 +21,7 @@ function NewCart({closeModel}){
 
 const checkOut=()=>{
 
-Axios.post("http://localhost:3001/addTotal",
+Axios.post("http://18.218.134.220:3001/addTotal",
 {tot:total,name:localStorage.getItem('restName'),customer:localStorage.getItem('name'),
 dishes:JSON.stringify(cartItem),address: address,deliveryType:dType,status:"New Order"}).then((response)=>{
 console.log(response);

@@ -8,7 +8,7 @@ function Favourites(){
     const[fav,setFav]=useState([]);
 
     useEffect(()=>{
-        Axios.post("http://localhost:3001/fav",
+        Axios.post("http://18.218.134.220:3001/fav",
         {name:localStorage.getItem('name')}).then((response)=>{
           setFav(response.data);
          

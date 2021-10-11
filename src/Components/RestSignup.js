@@ -34,7 +34,7 @@ function RestSignup(){
 
 const restregister=()=>{
     
-    Axios.post("http://localhost:3001/restregister",
+    Axios.post("http://18.218.134.220:3001/restregister",
     {rname:rnameReg,loc:locReg,phone:phoneReg,email:emailReg,pwd:pwdReg}).then((response)=>{
         console.log(response);
     });

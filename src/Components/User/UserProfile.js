@@ -33,7 +33,7 @@ const[data,setdata]=useState([]);
 
 
 useEffect(()=>{
-    Axios.post("http://localhost:3001/userProfile",
+    Axios.post("http://18.218.134.220:3001/userProfile",
     {name:localStorage.getItem('name')}).then((response)=>{
       setdata(response.data);
     

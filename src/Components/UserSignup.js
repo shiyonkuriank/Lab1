@@ -34,7 +34,7 @@ function UserSignup(){
                                country:countryReg,password:pwdReg}));
     }
     const userregister=()=>{
-        Axios.post("http://localhost:3001/userregister",
+        Axios.post("http://18.218.134.220:3001/userregister",
         {name:nameReg, email:emailReg, phone:phoneReg, dob: dobReg,
          city: cityReg, state: stateReg, country: countryReg,pwd:pwdReg}).then((response)=>{
            
