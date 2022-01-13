@@ -1,7 +1,7 @@
 {"DB":{
     "host":"ubereatsdb.clb26ohijtw2.us-east-2.rds.amazonaws.com",
     "username":"shiyon",
-    "password":"ubereatsdb",
+    "password":"*****",
     "port":3306,
     "database":"ubereats_schema"
 
